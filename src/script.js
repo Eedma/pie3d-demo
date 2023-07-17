@@ -64,18 +64,11 @@ fontLoader.load(
         textGeometry = new TextGeometry('pieinthesky', new TextParams(font).addParams())
         textGeometry.computeBoundingBox()
         const textMaterial = new THREE.MeshNormalMaterial()
-
-
         textMesh = new THREE.Mesh(textGeometry, textMaterial)
-
-
-
         textGeometry.center()
         textMesh.position.z = 3
 
-
         scene.add(textMesh)
-
     }
 )
 
